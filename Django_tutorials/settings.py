@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'session_demo',
-    'CSV_lib_demo'
+    'CSV_lib_demo',
+    'email_app',
 ]
 
 MIDDLEWARE = [
@@ -100,6 +101,14 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+
+# Email Configuration
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'infotechupdatemedia@gmail.com'
+EMAIL_HOST_PASSWORD = 'toaster16'
 
 
 # Internationalization

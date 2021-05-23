@@ -20,5 +20,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('session_demo/', include('session_demo.urls')),
     path('CSV_lib_demo/', include('CSV_lib_demo.urls')),
-    path('create_pdf_demo/', include('create_pdf_demo.urls'))
+    path('create_pdf_demo/', include('create_pdf_demo.urls')),
+    path('email_app/', include('email_app.urls'))
 ]
